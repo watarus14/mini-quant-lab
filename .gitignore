@@ -12,6 +12,7 @@ __pycache__/
 *.o
 *.so
 build/
+*egg-info/
 
 # モデルの重み・データ配列（巨大化しやすい。ここに無くても pre-commit フックが止める）
 *.h5

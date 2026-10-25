@@ -1,0 +1,48 @@
+# 大容量・生成物（READMEだけ追跡）
+/data/*
+!/data/README.md
+/runs/
+/results/*
+!/results/README.md
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.o
+*.so
+build/
+
+# モデルの重み・データ配列（巨大化しやすい。ここに無くても pre-commit フックが止める）
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.zip
+
+# OS が作るごみ
+.DS_Store
+Thumbs.db
+
+# LaTeX ビルド生成物（PDFは build/ に出す）
+/paper/build/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+*.toc
+
+# ログ・一時・秘密情報
+*.log
+/tmp/
+.env
+*.pem
+id_*
